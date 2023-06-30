@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MAX7456")(type "KiCad")(uri "${KIPRJMOD}/libs/MAX7456")(options "")(descr ""))
+  (lib (name "xiao")(type "KiCad")(uri "${KIPRJMOD}/libs/xiao")(options "")(descr ""))
+)
