@@ -27,6 +27,8 @@ Seeed Fusion PCB Assembly Service offers one-stop prototyping for PCB manufactur
 Check out their website to know about their manufacturing capabilities and service.
 https://www.seeedstudio.com/pcb-assembly.html
 
+Seeed Fusion Agile manufacturing: https://seeedstudio.com/fusion.htm
+
 ## Reasons to choose Seeed Studio
 - They provide PCB services at extremely low pricing and with excellent quality.
 - Their offer is structured in such a way that everyone may have these boards at a reasonable price.
