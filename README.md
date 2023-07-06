@@ -1,10 +1,14 @@
 # MAX7456
 OSD Module board for MAX7456 / AT7456
 
+Datasheet: MAX7456 - https://www.analog.com/media/en/technical-documentation/data-sheets/MAX7456.pdf
+
+This is a breakout board for the Maxim MAX7456 monochrome on-screen display chip. The board is set up with all supporting circuitry and RCA connectors to allow the user to easily interrupt and overlay text and/or graphics onto a video signal (PAL or NTSC).
+
 ## Scheme XIAO
 ![Scheme](images/xiao-scheme.png)
 
-## Kicad XIAO
+## KiCad XIAO
 Board|PCB
 ----|----
 ![Board](images/xiao-board.png)|![View 1](images/xiao-preview.png)
@@ -12,11 +16,34 @@ Board|PCB
 ## Scheme
 ![](images/scheme.png)
 
-## Board
-![](images/board.png)
+Board|PCB
+----|----
+![Board](images/board.png)|![View 1](images/preview.png)
 
-## Preview
-![](images/preview.png)
+## Code
+
+There are several libraries for this project to work. 
+Library: https://github.com/neomilium/arduino-max7456/
+
+First you need to upload charset into MAX7456 in order to use it.
+
+```c
+#include <SPI.h>
+#include <max7456.h>
+
+Max7456       osd;
+
+void setup() {
+  SPI.begin();
+
+  osd.init(10);
+  osd.setDisplayOffsets(60, 18);
+  osd.setBlinkParams(_8fields, _BT_BT);
+  osd.activateOSD();
+  osd.print("Hello world :)", 1, 3);
+}
+void loop() { }
+```
 
 ## PCB Design
 
